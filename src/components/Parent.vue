@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import ScienceCard from './ScienceCard.vue';
+import ScienceCard from './Card.vue';
 
 export default {
   components: {
