@@ -28,7 +28,7 @@
   </div>
 </template>
 
-<script >
+<script>
 export default {
   props: ['cover', 'title', 'description', 'age', 'createdOn', 'edition', 'feedback'],
 }
