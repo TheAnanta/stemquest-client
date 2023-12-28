@@ -1,21 +1,13 @@
 <template>
   <div>
-    <Card
-      v-for="(card, index) in cards"
-      :key="index"
-      :cover="card.cover"
-      :title="card.title"
-      :description="card.description"
-      :age="card.age"
-      :createdOn="card.createdOn"
-      :edition="card.edition"
-      :feedback="card.feedback"
-    />
+    <Card v-for="(card, index) in this.cards" :key="index" :cover="card.cover" :title="card.title"
+      :description="card.description" :age="card.age" :createdOn="card.createdOn" :edition="card.edition"
+      :feedback="card.feedback" />
   </div>
 </template>
 
 <script lang="ts">
-import Card from './Card.vue';
+import Card from '@/components/Card.vue';
 
 export default {
   name: 'Parent',

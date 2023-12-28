@@ -16,6 +16,7 @@ export default {
             <h2 id="bold" className="text-4xl py-1 text-[#1E5B85]">STEMQuest</h2>
             <h2 id="medium" className="text-base text-[#1E5B85] py-1">Lorem ipsum dolor sit amet, consectetur adipiscing
               elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
+            <router-link to="/about">About</router-link>
           </div>
         </div>
         <div
