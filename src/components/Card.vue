@@ -1,6 +1,5 @@
-<!-- ScienceCard.vue -->
 <template>
-  <div class="science-card">
+  <div class="card">
     <img :src="cover" alt="Card Cover">
     <h2>{{ title }}</h2>
     <p>{{ description }}</p>
