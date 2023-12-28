@@ -6,6 +6,6 @@ import Parent from './components/Parent.vue';
 
 <template>
   <Home />
-  <Parent />
+  <!-- <Parent /> -->
 </template>
 
