@@ -1,8 +1,8 @@
 <template>
-  <section class='w-screen flex flex-col justify-evenly'>
+  <section class='w-screen flex flex-col justify-evenly px-8 '>
 
-    <nav class='px-8 py-12 gap-8 flex '>
-      <img src="@/assets/STEMQuestLogo.svg" alt="" class='h-14' />
+    <nav class='py-12 gap-8 flex '>
+      <img src="@/assets/logo.svg" alt="" class='h-14' />
       <input type="text" placeholder='Search by comic/edition'
         class='pl-8 rounded-full outline-none border border-slate-800 py-1 px-4 w-full'>
       <img src="@/assets/dusiPfp.svg" alt="" class='w-14 h-14' />
@@ -12,11 +12,11 @@
         <div>
           <h1 class='text-3xl font-extrabold'>Explore our vast range of concepts</h1>
           <h2>Explore our vast range of concepts</h2>
-          </div>
+        </div>
 
         <div class='flex space-x-8'>
-          <img src="@/assets/icons/sort.svg" alt='sort logo'/> <span>Sort</span>
-          <img src="@/assets/icons/filter.svg" alt='sort logo'/> <span>Filter</span>
+          <img src="@/assets/icons/sort.svg" alt='sort logo' /> <span>Sort</span>
+          <img src="@/assets/icons/filter.svg" alt='sort logo' /> <span>Filter</span>
         </div>
       </div>
       <div class="grid grid-cols-5 mx-14 my-4">
@@ -30,6 +30,9 @@
 <script lang="ts">
 import SubtopicCard from '@/components/explore/SubtopicCard.vue';
 import subTopics from '@/assets/data/subTopics.json';
+
+import SreeTejaDusi from '@/assets/image/profile/sreetejadusi.jpg';
+
 export default {
   name: 'Explore',
   components: {
@@ -39,6 +42,11 @@ export default {
     return {
       cards: subTopics,
     };
+  },
+  methods: {
+    getProfileImage(img) {
+      return "@/assets/image/profile/sreetejadusi.jpg";
+    },
   },
 };
 </script>
