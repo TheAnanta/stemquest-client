@@ -27,11 +27,11 @@
     font-family: GilroyRegular;
   }
   
-  #bold {
+  .bold {
     font-family: GilroyBold;
   }
   
-  #medium {
+  .medium {
     font-family: GilroyMedium;
   }
 
