@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/HomeView.vue';
+import Explore from '@/views/ExploreView.vue';
 
 export default createRouter({
   history: createWebHistory(),
@@ -10,7 +11,7 @@ export default createRouter({
     },
     {
       path: '/student',
-      component: () => import('@/views/StudentView.vue'),
+      component: () => Explore,
     },
   ],
 })

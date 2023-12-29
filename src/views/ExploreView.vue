@@ -1,18 +1,16 @@
 <template>
   <div>
-    <Card v-for="(card, index) in this.cards" :key="index" :cover="card.cover" :title="card.title"
-      :description="card.description" :age="card.age" :createdOn="card.createdOn" :edition="card.edition"
-      :feedback="card.feedback" />
+    <SubtopicCard v-for="(card, index) in this.cards" :key="index" :item="card" />
   </div>
 </template>
 
 <script lang="ts">
-import Card from '@/components/Card.vue';
+import SubtopicCard from '@/components/explore/SubtopicCard.vue';
 
 export default {
-  name: 'Parent',
+  name: 'Explore',
   components: {
-    Card,
+    SubtopicCard,
   },
   data() {
     return {
