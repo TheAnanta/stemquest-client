@@ -19,7 +19,7 @@
           <img src="@/assets/icons/filter.svg" alt='sort logo' /> <span>Filter</span>
         </div>
       </div>
-      <div class="grid grid-cols-5 my-4 mx-auto">
+      <div class="grid grid-cols-5 my-4 mx-auto gap-x-24">
         <SubtopicCard v-for="(card, index) in this.cards" :key="index" :item="card" />
       </div>
     </div>
