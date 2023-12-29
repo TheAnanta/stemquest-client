@@ -54,7 +54,7 @@
                   Supporting line text lorem ipsum dolor sit amet, consectetur
                 </p>
               </div>
-              <input type="checkbox" id="preference1" name="preference1"  class="w-6 h-6 ml-2  cursor-pointer" />
+              <input type="checkbox" id="preference1" name="preference1"  class="accent-red-800 w-6 h-6 ml-2 cursor-pointer" />
             </label>
 
             <label for="preference2" class="flex items-start p-4 mb-8 rounded-lg hover:bg-gray-100 transition duration-150 cursor-pointer">
@@ -65,7 +65,7 @@
                   Supporting line text lorem ipsum dolor sit amet, consectetur
                 </p>
               </div>
-              <input type="checkbox" id="preference2" name="preference2" class="w-6 h-6 ml-2  cursor-pointer" />
+              <input type="checkbox" id="preference2" name="preference2" class="accent-red-800 w-6 h-6 ml-2 cursor-pointer" />
             </label>
 
             <label for="preference3" class="flex items-start p-4 mb-8 rounded-lg hover:bg-gray-100 transition duration-150 cursor-pointer">
@@ -76,7 +76,7 @@
                   Supporting line text lorem ipsum dolor sit amet, consectetur
                 </p>
               </div>
-              <input type="checkbox" id="preference3" name="preference3" class="w-6 h-6 ml-2  cursor-pointer" />
+              <input type="checkbox" id="preference3" name="preference3" class="accent-red-800 w-6 h-6 ml-2 cursor-pointer" />
             </label>
           </div>
 
@@ -89,7 +89,7 @@
                   Supporting line text lorem ipsum dolor sit amet, consectetur
                 </p>
               </div>
-              <input type="checkbox" id="preference4" name="preference4" class="w-6 h-6 ml-2  cursor-pointer" />
+              <input type="checkbox" id="preference4" name="preference4" class="accent-red-800 w-6 h-6 ml-2 cursor-pointer" />
             </label>
 
             <label for="preference5" class="flex items-start p-4 mb-8 rounded-lg hover:bg-gray-100 transition duration-150 cursor-pointer" >
@@ -100,7 +100,7 @@
                   Supporting line text lorem ipsum dolor sit amet, consectetur
                 </p>
               </div>
-              <input type="checkbox" id="preference5" name="preference5" class="w-6 h-6 ml-2  cursor-pointer" />
+              <input type="checkbox" id="preference5" name="preference5" class="accent-red-800 w-6 h-6 ml-2 cursor-pointer" />
             </label>
 
             <label for="preference6" class="flex items-start p-4 mb-8 rounded-lg hover:bg-gray-100 transition duration-150 cursor-pointer">
@@ -111,12 +111,12 @@
                   Supporting line text lorem ipsum dolor sit amet, consectetur
                 </p>
               </div>
-              <input type="checkbox" id="preference6" name="preference6" class="w-6 h-6 ml-2  cursor-pointer" />
+              <input type="checkbox" id="preference6" name="preference6" class="accent-red-800 w-6 h-6 ml-2 cursor-pointer" />
             </label>
           </div>
         </div>
       </div>
-      <div class='px-8'>
+      <div class='pr-8'>
         <img src="@/assets/icons/bigImage.svg" alt="" />
         <div class='flex'>
           <div class="flex justify-evenly">
@@ -126,11 +126,7 @@
           <div>
             <button class="bg-red-800 rounded-3xl text-white px-8 py-4 w-full outline-none text-xl">Proceed to Card</button>
           </div>
-          
         </div>
-        
-
-        
       </div>
     </section>
   </main>
