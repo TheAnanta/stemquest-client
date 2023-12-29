@@ -7,9 +7,9 @@ export default {
 <template>
   <main class="w-screen h-screen">
     <div class="relative overflow-x-clip">
-      <img src="@\assets\background\bg-aligned.png" className="w-screen h-screen absolute z-0 align-bottom" />
-      <img id='clouds' src="@\assets\background\clouds.png" className="w-screen h-screen absolute z-10" />
-      <img id="birds" src="@\assets\background\birds.png" className="w-screen h-screen absolute z-20" />
+      <img src="@\assets\image\background\bg-aligned.png" className="w-screen h-screen absolute z-0 align-bottom" />
+      <img id='clouds' src="@\assets\image\background\clouds.png" className="w-screen h-screen absolute z-10" />
+      <img id="birds" src="@\assets\image\background\birds.png" className="w-screen h-screen absolute z-20" />
       <div className="flex flex-col absolute h-screen items-start justify-center lg:px-32 px-8 py-16">
         <div className="flex items-center justify-between grow">
           <div className="sm:w-5/12">
@@ -31,7 +31,7 @@ export default {
         </div>
       </div>
       <div className="h-screen w-screen absolute">
-        <img src="@\assets\background/sprites.svg" alt="sprites"
+        <img src="@\assets\image\background/sprites.svg" alt="sprites"
           className="w-[32%] z-30 absolute right-[14%] bottom-[15%]" />
       </div>
     </div>
