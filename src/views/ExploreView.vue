@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="grid grid-cols-5 my-4 mx-auto gap-x-24">
-        <SubtopicCard v-for="(card, index) in this.cards" :key="index" :item="card" />
+        <SubtopicCard v-for="(card, index) in cards" :key="index" :item="card" />
       </div>
     </div>
 
@@ -43,7 +43,7 @@ export default {
     };
   },
   methods: {
-    getProfileImage(img) {
+    getProfileImage(img: string) {
       return "@/assets/image/profile/sreetejadusi.jpg";
     },
   },
