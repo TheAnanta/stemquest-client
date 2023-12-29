@@ -10,21 +10,21 @@
 
 @font-face {
     font-family: GilroyBold;
-    src: url(/fonts/gilroy_bold.ttf);
+    src: url(/fonts/DMSans-SemiBold.ttf);
   }
   
   @font-face {
-    font-family: GilroyMedium;
-    src: url(/fonts/gilroy_medium.ttf);
+    font-family: DMMedium;
+    src: url(/fonts/DMSans-Medium.ttf);
   }
   
-  @font-face {
-    font-family: GilroyRegular;
-    src: url(/fonts/gilroy_regular.ttf);
+@font-face {
+    font-family: DMRegular;
+    src: url(/fonts/DMSans-Regular.ttf);
   }
   
   * {
-    font-family: GilroyRegular;
+    font-family: DMRegular;
   }
   
   .bold {
@@ -32,7 +32,7 @@
   }
   
   .medium {
-    font-family: GilroyMedium;
+    font-family: DMMedium;
   }
 
 
