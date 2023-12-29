@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "vue": "^3.3.11",
+    "vue-demi": "^0.14.6",
     "vue-router": "^4.2.5",
     "vuetify": "^3.4.9"
   },

@@ -139,13 +139,10 @@
 </template>
 
 <script lang="ts">
-import SubtopicCard from '@/components/explore/SubtopicCard.vue';
+
 import subTopics from '@/assets/data/subTopics.json';
 export default {
   name: 'Customize',
-  components: {
-    SubtopicCard,
-  },
   data() {
     return {
       cards: subTopics,
