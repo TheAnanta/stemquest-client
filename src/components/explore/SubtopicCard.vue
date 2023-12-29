@@ -1,9 +1,11 @@
 <template>
-  <div class="card">
+  <div class="card my-4">
     <!-- <img :src="cover" alt="Card Cover"> -->
-    <h2 class="bold" style="font-size: 150%">{{ item.title }}</h2>
-    <p>{{ item.description }}</p>
+    <img src='../../assets/comic1.svg' alt="item image">
+    <h2 class="bold" style="font-size: 120%">{{ item.title }}</h2>
+    <p class='text-[#757575]'>{{ item.description.length > 28 ? item.description.slice(0, 28) + '...' : item.description }}</p>
     <div class="flex">
+      
       <v-icon class='material-icons-round yellow-icon' v-if="item.feedback.aggregateRating < 1">star_half</v-icon>
       <v-icon class='material-icons-round yellow-icon' v-if="item.feedback.aggregateRating >= 1">star</v-icon>
       <v-icon class='material-icons-round yellow-icon'
