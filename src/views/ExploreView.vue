@@ -1,14 +1,14 @@
 <template>
-  <section class='w-screen flex flex-col justify-evenly px-8 '>
+  <section class='w-screen flex flex-col justify-evenly px-16 '>
 
     <nav class='py-12 gap-8 flex '>
       <img src="@/assets/logo.svg" alt="" class='h-14' />
       <input type="text" placeholder='Search by comic/edition'
         class='pl-8 rounded-full outline-none border border-slate-800 py-1 px-4 w-full'>
-      <img src="@/assets/dusiPfp.svg" alt="" class='w-14 h-14' />
+      <!-- <img src="@/assets/images/profile/sreetejadusi.jpg" alt="" class='w-14 h-14' /> -->
     </nav>
     <div>
-      <div class='mx-16 mb-6 flex justify-between items-end'>
+      <div class='mb-6 flex justify-between items-center'>
         <div>
           <h1 class='text-3xl font-extrabold'>Explore our vast range of concepts</h1>
           <h2>Explore our vast range of concepts</h2>
@@ -19,7 +19,7 @@
           <img src="@/assets/icons/filter.svg" alt='sort logo' /> <span>Filter</span>
         </div>
       </div>
-      <div class="grid grid-cols-5 mx-14 my-4">
+      <div class="grid grid-cols-5 my-4 mx-auto">
         <SubtopicCard v-for="(card, index) in this.cards" :key="index" :item="card" />
       </div>
     </div>
@@ -31,7 +31,6 @@
 import SubtopicCard from '@/components/explore/SubtopicCard.vue';
 import subTopics from '@/assets/data/subTopics.json';
 
-import SreeTejaDusi from '@/assets/image/profile/sreetejadusi.jpg';
 
 export default {
   name: 'Explore',
