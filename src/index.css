@@ -2,38 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    box-sizing: border-box;
-    margin: 0px;
+
+
+@font-face {
+  font-family: GilroyBold;
+  src: url(/fonts/gilroy_bold.ttf);
 }
 
+@font-face {
+  font-family: GilroyMedium;
+  src: url(/fonts/gilroy_medium.ttf);
+}
 
 @font-face {
-    font-family: GilroyBold;
-    src: url(/fonts/DMSans-SemiBold.ttf);
-  }
-  
-  @font-face {
-    font-family: DMMedium;
-    src: url(/fonts/DMSans-Medium.ttf);
-  }
-  
-@font-face {
-    font-family: DMRegular;
-    src: url(/fonts/DMSans-Regular.ttf);
-  }
-  
-  * {
-    font-family: DMRegular;
-  }
-  
-  .bold {
-    font-family: GilroyBold;
-  }
-  
-  .medium {
-    font-family: DMMedium;
-  }
+  font-family: GilroyRegular;
+  src: url(/fonts/gilroy_regular.ttf);
+}
+
+* {
+  font-family: GilroyRegular;
+}
+
+.bold {
+  font-family: GilroyBold;
+}
+
+.medium {
+  font-family: GilroyMedium;
+}
 
 
 #clouds {
@@ -59,10 +55,9 @@
   
   }
 
-  #app{
-    margin: 0;
-    padding: 0;
-  }
   .yellow-icon{
     color: #FFC107;
+  }
+  .gray-icon{
+    color: #666666;
   }

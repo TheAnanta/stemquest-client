@@ -4,13 +4,13 @@
       <img src="@/assets/logo.svg" alt="" class="h-14" />
       <input type="text" placeholder="Search by comic/edition"
         class="pl-8 rounded-full outline-none border border-slate-800 py-1 px-4 w-full" />
-      <!-- <img src="@/assets/dusiPfp.svg" alt="" class="w-14 h-14" /> -->
+      <img src="@/assets/image/profile/sreetejadusi.jpg" alt="Sree Teja Dusi" class="w-14 h-14 rounded-full" />
     </nav>
 
     <section class='flex'>
       <div class="px-8 w-[65%]">
         <h1 class="text-2xl font-bold mb-12">CUSTOMIZE</h1>
-        <h2 class="text-4xl font-bold mb-2">Into the Mitochondria</h2>
+        <h2 class="text-4xl font-bold mb-2">{{ cards.filter((e) => e.id == id)[0].title }}</h2>
         <h3 class="text-2xl font-bold mb-6">Edition One</h3>
 
         <div class="flex justify-between items-end">
@@ -148,5 +148,6 @@ export default {
       cards: subTopics,
     };
   },
+  props: ['id'],
 };
 </script>

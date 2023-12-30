@@ -18,6 +18,7 @@ export default createRouter({
     {
       path: '/student/:id',
       component: () => Customize,
+      props: true
     },
     {
       path: '/student/payment',
