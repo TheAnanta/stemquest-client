@@ -4,12 +4,12 @@ export default {
   methods: {
     setStudentRole() {
       window.localStorage.setItem('role', 'student');
-      this.$router.push('/student');
+      this.$router.push('/explore');
     },
     checkAuth() {
       console.log("Hello");
       if (window.localStorage.getItem('role') == 'student') {
-        this.$router.push('/student');
+        this.$router.push('/explore');
       }
       else if (window.localStorage.getItem('role') == 'educator') {
         this.$router.push('/educator');

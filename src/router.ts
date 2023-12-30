@@ -12,17 +12,18 @@ export default createRouter({
       component: Home,
     },
     {
-      path: '/student',
-      component: () => Explore,
+      path: '/explore',
+      name: 'Explore',
+      component: Explore,
     },
     {
-      path: '/student/:id',
-      component: () => Customize,
+      path: '/topic/:id',
+      component: Customize,
       props: true
     },
     {
-      path: '/student/payment',
-      component: () => Payment,
+      path: '/topic/payment',
+      component: Payment,
     },
   ],
 })

@@ -1,5 +1,5 @@
 <template>
-  <a :href="`/student/` + item.id">
+  <a :href="`/topic/` + item.id">
     <div class="w-max my-4">
       <!-- <img :src="cover" alt="Card Cover"> -->
       <img :src="`${imageUrl}${item.cover}`" :alt='item.cover'
@@ -13,7 +13,7 @@
         28)
         + '...' : item.description
       }}</p>
-      <div class="flex" style="margin-top: 0.15rem;">
+      <!-- <div class="flex" style="margin-top: 0.15rem;">
         <v-icon class='material-icons-round yellow-icon' v-if="item.feedback.aggregateRating < 1">star_half</v-icon>
         <v-icon class='material-icons-round yellow-icon' v-if="item.feedback.aggregateRating >= 1">star</v-icon>
         <v-icon class='material-icons-round yellow-icon'
@@ -31,7 +31,7 @@
         <v-icon class='material-icons-round gray-icon'
           v-if="item.feedback.aggregateRating < 5 && item.feedback.aggregateRating >= 4 && item.feedback.aggregateRating != 4.5">star</v-icon>
         <p class="pl-3">{{ getRatingCount }}</p>
-      </div>
+      </div> -->
     </div>
   </a>
 </template>

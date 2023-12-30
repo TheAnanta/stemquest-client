@@ -44,10 +44,5 @@ export default {
       cards: subTopics,
     };
   },
-  methods: {
-    getProfileImage(img: string) {
-      return "@/assets/image/profile/sreetejadusi.jpg";
-    },
-  },
 };
 </script>
