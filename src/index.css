@@ -19,6 +19,24 @@
   src: url(/fonts/gilroy_regular.ttf);
 }
 
+@font-face {
+  font-family: DMSans;
+  src: url(/fonts/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: DMSans;
+  font-weight: 500;
+  src: url(/fonts/DMSans-Medium.ttf);
+}
+
+.dmSans-regular {
+  font-family: DMSans;
+}
+.dmSans-medium {
+  font-family: DMSans;
+  font-weight: 500;
+}
+
 * {
   font-family: GilroyRegular;
 }

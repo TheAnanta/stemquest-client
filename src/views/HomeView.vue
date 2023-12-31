@@ -30,8 +30,7 @@ export default {
     <div class="flex flex-col absolute h-screen items-start justify-center conditional-padding-32-8 py-16 w-full">
       <div class="flex items-center justify-between grow">
         <div className="sm:w-5/12">
-          <h2 className="bold text-4xl py-1 text-[#1E5B85]">Lorem ipsum dolor sit amet,<br />consectetur adipiscing
-            elit. </h2>
+          <h2 className="bold text-4xl py-1 text-[#1E5B85]">STEMQuest</h2>
           <h2 className="medium text-base text-[#1E5B85] py-1">Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
         </div>
