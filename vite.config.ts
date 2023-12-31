@@ -12,7 +12,16 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+      '@subtopic': fileURLToPath(new URL('./src/assets/image', import.meta.url))
     }
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      target: 'es2020'
+    }
+  },
+  build: {
+    target: 'es2020'
   }
 })

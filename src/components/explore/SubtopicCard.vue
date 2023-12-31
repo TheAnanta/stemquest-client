@@ -37,6 +37,7 @@
 </template>
 
 <script>
+import Electricity from "@/assets/image/subtopics/electricity.png";
 export default {
   props: ['item'],
   computed: {
@@ -48,9 +49,16 @@ export default {
     getProfileImage(img) {
       return img;
     },
-    getImage(img) {
-      const imageUrl = new URL("/src/assets/image/subtopics/electricity.png", import.meta.url);
-      return imageUrl;
+    getImage(fileName) {
+      try {
+        const modules = import.meta.glob('@/assets/image/**/*.{png,svg,jpg,jpeg}', { eager: true })
+        const moduleKeys = Object.keys(modules)
+        const fileSrc = moduleKeys.find(key => key.includes(fileName))
+
+        return fileSrc ? modules[fileSrc].default : ''
+      } catch (err) {
+        console.log(err)
+      }
     }
   }
 };
