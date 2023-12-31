@@ -22,7 +22,7 @@ export default createRouter({
       props: true
     },
     {
-      path: '/topic/payment',
+      path: '/cart/payment',
       component: Payment,
     },
   ],
