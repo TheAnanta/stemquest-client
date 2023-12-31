@@ -49,7 +49,7 @@ export default {
       return img;
     },
     getImage(img) {
-      const imageUrl = new URL("../../assets/image" + img, import.meta.url).href;
+      const imageUrl = new URL("@/assets/image" + img, import.meta.url).href;
       return imageUrl;
     }
   }
