@@ -19,7 +19,7 @@
     "description": "This is a description of the video. Lorem ipsum dolor amet sit amesteur.",
     "oneLinerSummaryOfDescription": "This is a description of the video",
     "tags": "mitochondria, cell, powerhouse, science, biology, atp, energy",
-    "cover": "subtopics/electricity.png",
+    "cover": "/subtopics/electricity.png",
     "age": {
       "min": 6,
       "max": 12

@@ -2,7 +2,7 @@
   <a :href="`/topic/` + item.id">
     <div class="w-max my-4">
       <!-- <img :src="cover" alt="Card Cover"> -->
-      <img :src="`${imageUrl}${item.cover}`" :alt='item.cover'
+      <img :src="getImage(item.cover)" :alt='item.cover'
         style="width: 20ch; height: 20ch; border-radius: 12px; object-fit: cover;" />
       <h2 class="bold"
         style="font-size: 120%; margin-top: 1rem;max-width: 18ch; overflow: hidden; max-lines: 1; text-overflow: clip; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1;">
@@ -39,10 +39,6 @@
 <script>
 export default {
   props: ['item'],
-  setup() {
-    const imageUrl = new URL("../../assets/image/", import.meta.url).href;
-    return { imageUrl };
-  },
   computed: {
     getRatingCount() {
       return this.item.feedback.reviews.length;
@@ -52,6 +48,10 @@ export default {
     getProfileImage(img) {
       return img;
     },
+    getImage(img) {
+      const imageUrl = new URL("../../assets/image" + img, import.meta.url).href;
+      return imageUrl;
+    }
   }
 };
 </script>
