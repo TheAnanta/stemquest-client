@@ -1,7 +1,9 @@
 <template>
   <main class="w-screen flex-col md:flex-row justify-evenly">
     <nav class="p-8 gap-8 flex items-center">
-      <v-icon class='material-icons-round md:hidden'>arrow_back</v-icon>
+      <button @click="navigateUp">
+        <v-icon class='material-icons-round md:hidden'>arrow_back</v-icon>
+      </button>
       <div class="grow md:hidden"></div>
       <img src="@/assets/logo.svg" alt="" class="h-14 hidden md:flex" />
       <input type="text" placeholder="Search by comic/edition"
@@ -78,6 +80,11 @@ export default {
     return {
       cards: subTopics,
     };
+  },
+  methods: {
+    navigateUp() {
+      this.$router.go(-1);
+    }
   },
   props: ['id'],
   components: { PreferenceCard }

@@ -40,7 +40,7 @@
 export default {
   props: ['item'],
   setup() {
-    const imageUrl = new URL("../../assets/image/", import.meta.url).href;
+    const imageUrl = new URL("../../assets/image", import.meta.url).href;
     return { imageUrl };
   },
   computed: {
