@@ -57,7 +57,7 @@
         <div class="flex mt-6 items-center justify-between">
           <div class="flex flex-col md:flex-row">
             <p class='text-xl md:text-2xl pl-6 dmSans-regular'>Total</p>
-            <p class='text-3xl md:text-4xl pl-6 dmSans-medium'>₹ 2000</p>
+            <p class='text-3xl md:text-4xl pl-6 dmSans-medium'>₹ 2500</p>
           </div>
           <div>
             <button class="bg-red-800 rounded-3xl text-white px-8 py-4 w-full outline-none text-xl dmSans-regular">Proceed
