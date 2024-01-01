@@ -29,14 +29,14 @@ export default {
     <img id="birds" src="@/assets/image/background\birds.png" className="w-screen h-screen absolute z-20" />
     <div class="flex flex-col absolute h-screen items-start justify-center conditional-padding-32-8 py-16 w-full">
       <div class="flex items-center justify-between grow">
-        <div className="sm:w-5/12">
+        <div className="w-5/12">
           <h2 className="bold text-4xl py-1 text-[#1E5B85]">STEMQuest</h2>
           <h2 className="medium text-base text-[#1E5B85] py-1">Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
         </div>
       </div>
       <div
-        className="flex absolute items-center bottom-16 sm:left-40 sm:bottom-24 border-dashed rounded-lg border-white border-2 px-3 py-3">
+        className="flex absolute items-center bottom-16 left-40 bottom-24 border-dashed rounded-lg border-white border-2 px-3 py-3">
         <p className="bold absolute top-0 left-0 text-white text-base -mt-3 -ml-1 pr-2 bg-[#A8E25E]">Know More:</p>
         <button @click="setStudentRole"
           className="bg-[#78a3f3e7] hover:bg-[#78a3f3] text-white px-2 py-1 mx-2 rounded-md z-20 duration-200">as

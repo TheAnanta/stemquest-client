@@ -27,6 +27,12 @@
   src: url(/fonts/DMSans-Medium.ttf);
 }
 
+.no-scrollbars{
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+}
+
 .dmSans-regular {
   font-family: DMSans;
 }

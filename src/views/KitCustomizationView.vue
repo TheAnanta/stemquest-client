@@ -74,6 +74,12 @@
 
 import subTopics from '@/assets/data/subTopics.json';
 import PreferenceCard from '@/components/explore/KitComponent.vue';
+import { ref } from 'vue'
+
+// state
+const comic = ref(true)
+const mixedReality = ref(true)
+
 export default {
   name: 'Customize',
   data() {
