@@ -1,7 +1,7 @@
 <template>
   <div class="flex gap-x-4 md:overflow-hidden h-screen">
     <section
-      class='grow flex flex-col overflow-x-hidden mx-6 md:mx-16 py-6 md:py-8 gap-12 md:overflow-y-scroll no-scrollbars'>
+      class='grow flex flex-col overflow-x-hidden explore-margin py-6 md:py-8 gap-12 md:overflow-y-scroll no-scrollbars'>
 
       <nav class='gap-4 md:gap-8 flex'>
         <img src="@/assets/logo.svg" alt="" class='h-12 md:h-14' />

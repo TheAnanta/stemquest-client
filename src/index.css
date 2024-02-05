@@ -84,3 +84,14 @@
   .gray-icon{
     color: #666666;
   }
+
+  .explore-margin {
+    margin: 0 64px;
+  }
+
+  @media screen and (max-width: 840px) {
+    .explore-margin {
+      margin: 0 32px;
+    }
+    
+  }
