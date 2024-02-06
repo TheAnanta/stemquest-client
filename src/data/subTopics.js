@@ -94,7 +94,7 @@ const items = [
       'This is a description of the video. Lorem ipsum dolor amet sit amesteur.',
     oneLinerSummaryOfDescription: 'This is a description of the video',
     tags: 'mitochondria, cell, powerhouse, science, biology, atp, energy',
-    cover: '/image/subtopics/electricity.png',
+    cover: '/image/subtopics/evolution.png',
     age: {
       min: 6,
       max: 12,
@@ -168,7 +168,7 @@ const items = [
       'This is a description of the video. Lorem ipsum dolor amet sit amesteur.',
     oneLinerSummaryOfDescription: 'This is a description of the video',
     tags: 'mitochondria, cell, powerhouse, science, biology, atp, energy',
-    cover: '/image/subtopics/electricity.png',
+    cover: '/image/subtopics/mitochondria.png',
     age: {
       min: 6,
       max: 12,
@@ -242,7 +242,7 @@ const items = [
       'This is a description of the video. Lorem ipsum dolor amet sit amesteur.',
     oneLinerSummaryOfDescription: 'This is a description of the video',
     tags: 'mitochondria, cell, powerhouse, science, biology, atp, energy',
-    cover: '/image/subtopics/electricity.png',
+    cover: '/image/subtopics/sensors-demystified.jpg',
     age: {
       min: 6,
       max: 12,

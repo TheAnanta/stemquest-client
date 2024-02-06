@@ -4,16 +4,12 @@ export default function Page() {
   return (
     <div className='background-container'>
       <img
-        src='/assets/image/background/background.png'
+        src='/image/background/background.png'
         alt=''
         className='background'
       />
-      <img src='/assets/image/background/birds.png' alt='' className='birds' />
-      <img
-        src='/assets/image/background/clouds.png'
-        alt=''
-        className='clouds'
-      />
+      <img src='/image/background/birds.png' alt='' className='birds' />
+      <img src='/image/background/clouds.png' alt='' className='clouds' />
       <button className='z-10'>Student</button>
     </div>
   );

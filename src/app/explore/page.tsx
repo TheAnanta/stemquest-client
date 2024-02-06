@@ -55,15 +55,8 @@ function Explore() {
               <span className='font-bold uppercase'>Filter</span>
             </div>
           </div>
-          <div className='md:grid my-4 gap-x-24 grid grid-cols-4'>
-            {subTopics.map((card, index) => (
-              <SubtopicCard
-                key={index}
-                item={card}
-                className='cursor-pointer'
-                onClick={() => handleClickById(index)}
-              />
-            ))}
+          <div className='md:grid my-4 gap-x-24'>
+            <SubtopicCard />
           </div>
         </div>
       </section>
