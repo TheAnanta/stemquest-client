@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
   font-family: GilroyBold;
   src: url(/fonts/gilroy_bold.ttf);
@@ -17,8 +16,6 @@
   font-family: GilroyRegular;
   src: url(/fonts/gilroy_regular.ttf);
 }
-
-
 
 .bold {
   font-family: GilroyBold;
@@ -54,3 +51,14 @@
     ); /* Adjust the distance as per your requirement */
   }
 }
+
+.concept-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  row-gap: 16px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
