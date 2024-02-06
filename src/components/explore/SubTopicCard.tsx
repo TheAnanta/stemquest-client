@@ -1,6 +1,6 @@
 import items from '@/data/subTopics';
 
-const SubTopicCard = () => {
+const SubTopicCard = ({ handleClick }: { handleClick: (id: number) => void }) => {
   return (
     <div>
       <div className='grid grid-cols-5 mx-auto container gap-8'>

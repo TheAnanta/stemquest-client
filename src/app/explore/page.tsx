@@ -6,22 +6,10 @@ import TopicSideSheet from '@/components/explore/TopicSideSheet';
 
 
 function Explore() {
-  const [selectedTopicId, setSelectedTopicId] = useState<number>(-1);
-
-  const selectTopicById = (id: number) => {
-    setSelectedTopicId(id);
-  };
-
-  const unselectTopic = () => {
-    setSelectedTopicId(-1);
-  };
+  const [selectedTopicId, setSelectedTopicId] = useState<number | null>(null);
 
   const handleClickById = (id: number) => {
-    if (selectedTopicId === id) {
-      unselectTopic();
-    } else {
-      selectTopicById(id);
-    }
+    setSelectedTopicId(id === selectedTopicId ? null : id);
   };
 
   return (
@@ -62,12 +50,12 @@ function Explore() {
       {selectedTopicId !== -1 && (
         <div
           className='bg-black/30 w-screen h-screen absolute md:hidden'
-          onClick={unselectTopic}
+          // onClick={unselectTopic}
         ></div>
       )}
-      {selectedTopicId !== -1 && (
+      {selectedTopicId !== null && selectedTopicId !== -1 && (
         <div className='z-10 bg-white md:bg-red-50 top-0 right-0 h-full w-[80%] md:w-[40%] absolute md:relative p-8 md:p-12'>
-             <TopicSideSheet selectedTopicId={selectedTopicId} />
+          <TopicSideSheet selectedTopicId={selectedTopicId} />
         </div>
       )}
     </div>
