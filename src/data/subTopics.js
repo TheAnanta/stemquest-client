@@ -1,4 +1,4 @@
-const items = [
+const subTopics = [
   {
     id: 'electricity-mystery',
     subject: 'science',
@@ -600,4 +600,4 @@ const items = [
   },
 ];
 
-export default items;
+export default subTopics;

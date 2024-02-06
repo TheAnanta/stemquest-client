@@ -1,16 +1,6 @@
-'use client';
-import React, { useState } from 'react';
-import SubtopicCard from '@/components/explore/SubTopicCard';
-import subTopics from '@/data/subTopics';
-import TopicSideSheet from '@/components/explore/TopicSideSheet';
-
+import items from '@/data/subTopics';
 
 function Explore() {
-  const [selectedTopicId, setSelectedTopicId] = useState<number | null>(null);
-
-  const handleClickById = (id: number) => {
-    setSelectedTopicId(id === selectedTopicId ? null : id);
-  };
 
   return (
     <div className='flex gap-x-4 h-screen mx-16'>
@@ -44,10 +34,39 @@ function Explore() {
               <span className='font-bold uppercase'>Filter</span>
             </div>
           </div>
-          <SubtopicCard handleClick={handleClickById} />
+          {/* SubTopicCards in a grid */}
+          <div className='grid grid-cols-5 mx-auto container gap-8'>
+            {items.map((item) => {
+              return (
+                <a
+                  className='flex flex-col cursor-pointer'
+                  href={`/explore/customise/${item.id}`}
+                  target='_blank'
+                >
+                  <img
+                    src={item.cover}
+                    alt={item.cover}
+                    className='w-48 h-48 rounded-lg object-cover object-top'
+                  />
+                  <div className='flex flex-col items-start justify-start'>
+                    <h2 className='font-bold text-lg mt-4 overflow-ellipsis'>
+                      {item.title.length > 28
+                        ? item.title.slice(0, 28) + '...'
+                        : item.title}
+                    </h2>
+                    <p className='text-[#757575] mt-1'>
+                      {item.description.length > 28
+                        ? item.description.slice(0, 28) + '...'
+                        : item.description}
+                    </p>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
         </div>
       </section>
-      {selectedTopicId !== -1 && (
+      {/* {selectedTopicId !== -1 && (
         <div
           className='bg-black/30 w-screen h-screen absolute md:hidden'
           // onClick={unselectTopic}
@@ -57,7 +76,7 @@ function Explore() {
         <div className='z-10 bg-white md:bg-red-50 top-0 right-0 h-full w-[80%] md:w-[40%] absolute md:relative p-8 md:p-12'>
           <TopicSideSheet selectedTopicId={selectedTopicId} />
         </div>
-      )}
+      )} */}
     </div>
   );
 }
