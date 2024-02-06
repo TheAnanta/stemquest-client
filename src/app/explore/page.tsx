@@ -34,7 +34,15 @@ export default function Explore() {
         </div>
         <div className="concept-wrapper">
           {concepts.map((concept) => {
-            return <ConceptCard concept={concept} />;
+            return (
+              <ConceptCard
+                key={concept.id}
+                concept={concept}
+                onExploreConcept={() => {
+                  window.location.href = `/explore/customize/${concept.id}`;
+                }}
+              />
+            );
           })}
         </div>
       </div>

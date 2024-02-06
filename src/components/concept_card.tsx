@@ -2,11 +2,15 @@
 import Concept from "@/data/concept";
 import { useState } from "react";
 
-export default function ConceptCard(props: { concept: Concept }) {
+export default function ConceptCard(props: {
+  concept: Concept;
+  onExploreConcept: () => void;
+}) {
   console.log(props.concept);
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
+      onClick={props.onExploreConcept}
       className={`rounded-3xl flex flex-col gap-y-4 p-6 w-min hover:scale-105 cursor-pointer`}
       style={
         isHovered
