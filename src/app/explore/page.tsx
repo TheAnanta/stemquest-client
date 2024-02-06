@@ -4,10 +4,11 @@ import SubtopicCard from '@/components/explore/SubTopicCard';
 import subTopics from '@/data/subTopics';
 import TopicSideSheet from '@/components/explore/TopicSideSheet';
 
-function Explore() {
-  const [selectedTopicId, setSelectedTopicId] = useState(-1);
 
-  const selectTopicById = (id: any) => {
+function Explore() {
+  const [selectedTopicId, setSelectedTopicId] = useState<number>(-1);
+
+  const selectTopicById = (id: number) => {
     setSelectedTopicId(id);
   };
 
@@ -15,7 +16,7 @@ function Explore() {
     setSelectedTopicId(-1);
   };
 
-  const handleClickById = (id: any) => {
+  const handleClickById = (id: number) => {
     if (selectedTopicId === id) {
       unselectTopic();
     } else {
@@ -24,7 +25,7 @@ function Explore() {
   };
 
   return (
-    <div className='flex gap-x-4 md:overflow-hidden h-screen m-8'>
+    <div className='flex gap-x-4 h-screen mx-16'>
       <section className='grow flex flex-col py-6 md:py-8 gap-12 '>
         <nav className='gap-4 md:gap-8 flex'>
           <img src='/logo.svg' alt='' className='h-12 md:h-14' />
@@ -40,7 +41,7 @@ function Explore() {
             className='w-12 h-12 md:w-14 md:h-14 rounded-full'
           />
         </nav>
-        <div className='grow '>
+        <div>
           <div className='mb-6 space-y-4 md:space-y-0 md:flex justify-between items-center'>
             <div>
               <h1 className='text-3xl font-bold'>
@@ -55,9 +56,7 @@ function Explore() {
               <span className='font-bold uppercase'>Filter</span>
             </div>
           </div>
-          <div className='md:grid my-4 gap-x-24'>
-            <SubtopicCard />
-          </div>
+          <SubtopicCard handleClick={handleClickById} />
         </div>
       </section>
       {selectedTopicId !== -1 && (
@@ -68,7 +67,7 @@ function Explore() {
       )}
       {selectedTopicId !== -1 && (
         <div className='z-10 bg-white md:bg-red-50 top-0 right-0 h-full w-[80%] md:w-[40%] absolute md:relative p-8 md:p-12'>
-          <TopicSideSheet item={subTopics[selectedTopicId]} />
+             <TopicSideSheet selectedTopicId={selectedTopicId} />
         </div>
       )}
     </div>

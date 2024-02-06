@@ -1,4 +1,4 @@
-[
+const address = [
   {
     "type": "Home",
     "address": "123, ABC Nagar, XYZ Street, Gandhinagar, Pune, Maharashtra, India - 411027",
@@ -24,3 +24,5 @@
     "address": "202, MNO Enclave, UVW Road, Banjara Hills, Hyderabad, Telangana, India - 500034",
     "contact": "+91 54321 09876"
   }]
+
+  export default address;
