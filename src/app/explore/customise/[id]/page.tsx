@@ -12,7 +12,7 @@ export default function Page({ params }: { params: { id: string } }) {
     <div className='flex gap-x-4 h-screen'>
       <section className='grow flex flex-col mt-12 mx-12'>
         <nav className='gap-x-4 md:gap-x-8 flex mb-8'>
-          <img src='/logo.svg' alt='' className='h-12 md:h-14' />
+          <img src='/logo.svg' alt='logo' className='h-12 md:h-14' />
           <div className='grow md:hidden'></div>
           <input
             type='text'
@@ -25,10 +25,11 @@ export default function Page({ params }: { params: { id: string } }) {
             className='w-12 h-12 md:w-14 md:h-14 rounded-full'
           />
         </nav>
-        <h1 className='text-2xl medium'>CUSTOMIZE</h1>
+
         <section className='flex justify-between'>
           <div className='px-8 md:w-[65%]'>
-            <h2 className='text-4xl medium mb-2'>{selectedTopic.title}</h2>
+            <h1 className='text-2xl font-medium mb-6'>CUSTOMIZE</h1>
+            <h2 className='text-4xl font-medium mb-2'>{selectedTopic.title}</h2>
             <h3 className='text-2xl medium mb-6'>Edition One</h3>
 
             <div className='flex flex-col md:flex-row justify-between items-end'>
@@ -66,8 +67,13 @@ export default function Page({ params }: { params: { id: string } }) {
               <PreferenceCard item={`Worksheets`} />
             </div>
           </div>
-          <div className='pr-8 flex flex-col grow mb-6'>
-            <img src={selectedTopic.cover} title='topic' alt='' className='o' />
+          <div className='flex flex-col mb-6'>
+            <img
+              src={'/VR.svg'}
+              title='topic'
+              alt=''
+              className='w-full h-full z-1'
+            />
             <div className='flex mt-6 items-center justify-between'>
               <div className='flex flex-col md:flex-row'>
                 <p className='text-xl md:text-2xl pl-6 dmSans-regular'>Total</p>
@@ -75,12 +81,10 @@ export default function Page({ params }: { params: { id: string } }) {
                   ₹ 2500
                 </p>
               </div>
-              <div>
-                <button className='bg-red-800 rounded-3xl text-white px-8 py-4 w-full outline-none text-xl dmSans-regular'>
-                  Proceed to Cart
-                </button>
-              </div>
             </div>
+            <button className='bg-red-800 rounded-3xl text-white px-8 py-3 w-full outline-none text-xl dmSans-regular'>
+              Proceed to Cart
+            </button>
           </div>
         </section>
       </section>
