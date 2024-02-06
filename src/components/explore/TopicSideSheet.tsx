@@ -1,6 +1,6 @@
 // TopicSideSheet.tsx
-import React, { useEffect } from 'react';
-import items from '@/data/subTopics';
+import React, { useEffect } from "react";
+import concepts from "@/data/concepts";
 
 interface Props {
   selectedTopicId: number;
@@ -14,8 +14,11 @@ interface SubTopic {
 function TopicSideSheet({ selectedTopicId }: Props) {
   return (
     <div>
-      {items.map((item: any) => (
-        <div key={item.id} className={selectedTopicId === item.id ? 'selected' : ''}>
+      {concepts.map((item: any) => (
+        <div
+          key={item.id}
+          className={selectedTopicId === item.id ? "selected" : ""}
+        >
           {/* Render your subtopic card content */}
           <h3>{item.title}</h3>
         </div>
