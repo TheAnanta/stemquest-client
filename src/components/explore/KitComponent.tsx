@@ -1,11 +1,7 @@
 function PreferenceCard({ item }: { item: String }) {
   return (
-    <label className='flex items-start rounded-lg hover:bg-gray-100 transition duration-150 cursor-pointer'>
-      <img
-        src='/assets/icons/thumbnail.svg'
-        alt='Comic Thumbnail'
-        className='mr-4'
-      />
+    <label className='flex items-start rounded-lg hover:bg-gray-100 transition duration-150 cursor-pointer p-4'>
+      <img src='/icons/thumbnail.svg' alt='Comic Thumbnail' className='mr-4' />
       <div className='flex flex-col'>
         <p className='dmSans-medium'>{item}</p>
         <p className='mb-2'>
@@ -22,4 +18,4 @@ function PreferenceCard({ item }: { item: String }) {
   );
 }
 
-export default PreferenceCard
+export default PreferenceCard;

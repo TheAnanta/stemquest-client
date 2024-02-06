@@ -30,8 +30,6 @@ const AddressAndPaymentComponent = () => {
           </div>
         ))}
       </div>
-      {/* You need to implement `CartCard` component in React */}
-      {/* <CartCard /> */}
     </main>
   );
 };

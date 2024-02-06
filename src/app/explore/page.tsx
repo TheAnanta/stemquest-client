@@ -4,7 +4,7 @@ function Explore() {
 
   return (
     <div className='flex gap-x-4 h-screen mx-16'>
-      <section className='grow flex flex-col py-6 md:py-8 gap-12 '>
+      <section className='grow flex flex-col py-6 md:py-8 gap-12'>
         <nav className='gap-4 md:gap-8 flex'>
           <img src='/logo.svg' alt='' className='h-12 md:h-14' />
           <div className='grow md:hidden'></div>
